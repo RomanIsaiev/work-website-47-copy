@@ -98,7 +98,9 @@
               >Достаточно иметь интернет и ноутбук
             </li>
           </ul>
-          <a class="header-btn link" href="">записаться на разбор</a>
+          <button type="button" class="header-btn" data-modal-open>
+            записаться на разбор
+          </button>
         </div>
       </div>
     </header>
@@ -130,7 +132,9 @@
                 обучения, исходя из вашей индивидуальной астрологической карты и
                 ваших талантов, возможностей для реализации
               </p>
-              <a class="personal-btn" href="">хочу</a>
+              <button type="button" class="personal-btn" data-modal-open>
+                хочу
+              </button>
             </div>
           </div>
         </div>
@@ -423,7 +427,10 @@
               </div>
             </li>
           </ul>
-          <a class="format-btn link" href="">мне подходит</a>
+          <button type="button" class="format-btn" data-modal-open>
+            мне подходит
+          </button>
+
           <p class="format-desc">
             <span>Я знаю, что жизнь может быть</span><br />
             действительно счастливой и наполненной, только если все сферы
@@ -681,7 +688,9 @@
             <p class="steps-liberty">
               Свобода, гармония, финансовая независимость
             </p>
-            <a class="steps-btn link" href="">я готова</a>
+            <button type="button" class="steps-btn" data-modal-open>
+              я готова
+            </button>
           </div>
         </div>
       </section>
@@ -1038,10 +1047,10 @@
                     Доступ к материалам курса: <span>3 месяца</span>
                   </li>
                 </ul>
-                <div class="price-wrapper">
+                <!-- <div class="price-wrapper">
                   <p class="price-title">Стоимость участия</p>
                   <p class="price"><span>$800</span> $495</p>
-                </div>
+                </div> -->
               </div>
             </li>
             <li class="category-item">
@@ -1125,10 +1134,10 @@
                     Доступ к материалам курса: <span>3 месяца</span>
                   </li>
                 </ul>
-                <div class="price-wrapper">
+                <!-- <div class="price-wrapper">
                   <p class="price-title">Стоимость участия</p>
                   <p class="price"><span>$1300</span> $795</p>
-                </div>
+                </div> -->
               </div>
             </li>
             <li class="category-item">
@@ -1212,10 +1221,10 @@
                     Доступ к материалам курса: <span>4 месяца</span>
                   </li>
                 </ul>
-                <div class="price-wrapper">
+                <!-- <div class="price-wrapper">
                   <p class="price-title">Стоимость участия</p>
                   <p class="price"><span>$2000</span> $1295</p>
-                </div>
+                </div> -->
               </div>
             </li>
             <li class="category-item">
@@ -1301,10 +1310,10 @@
                     Доступ к материалам курса: <span>6 месяцев</span>
                   </li>
                 </ul>
-                <div class="price-wrapper">
+                <!-- <div class="price-wrapper">
                   <p class="price-title">Стоимость участия</p>
                   <p class="price"><span>$4000</span> $2995</p>
-                </div>
+                </div> -->
               </div>
             </li>
           </ul>
@@ -1537,8 +1546,25 @@
         </div>
       </section>
     </main>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-button" data-modal-close>
+          <img
+            src="./src/img/close-modal-icon.svg"
+            width="40"
+            height="40"
+            alt="close"
+          />
+        </button>
+        <script
+          id="2307dabd4187a9963de14b80080ba4168ef7db8f"
+          src="https://vikabardadym.in.ua/pl/lite/widget/script?id=1204788"
+        ></script>
+      </div>
+    </div>
     <script type="module" src="./src/js/main.js"></script>
     <script src="./src/js/jquery-3.7.0.min.js" type="module"></script>
     <script src="./src/js/faq.js" type="module"></script>
+    <script type="module" src="/src/js/js-modal.js"></script>
   </body>
 </html>

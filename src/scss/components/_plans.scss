@@ -186,7 +186,7 @@
   padding-left: 25px;
   list-style: disc;
 
-  @include mx.adaptive("margin-bottom", 40, 20, 0);
+  // @include mx.adaptive("margin-bottom", 40, 20, 0);
 }
 
 .plans-desc-item {
