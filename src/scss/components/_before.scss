@@ -17,7 +17,7 @@
   @include mx.adaptive("font-size", 130, 48, 0);
   font-style: normal;
   font-weight: 400;
-  line-height: 80%; /* 156px */
+  line-height: 100%; /* 156px */
   @include mx.adaptive(" letter-spacing", -5.2, -2, 0);
   text-transform: uppercase;
 
