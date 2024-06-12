@@ -37,8 +37,6 @@
   justify-content: center;
 
   @include mx.adaptive("gap", 20, 10, 0);
-
-  @include mx.adaptive("width", 1700, 345, 0);
   margin: 0 auto;
 }
 

@@ -49,7 +49,28 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  @include mx.adaptive("gap", 35, 60, 0);
+  @include mx.adaptive("gap", 25, 50, 0);
+
+  margin: 0 auto;
+}
+
+// @media screen and (min-width: 0px) {
+//   .plans-category-list {
+//     @include mx.adaptive("width", 500, 645, 0);
+//   }
+// }
+
+@media screen and (min-width: 768px) {
+  .plans-category-list {
+    // @include mx.adaptive("width", 1000, 705, 0);
+    max-width: 1200px;
+  }
+}
+
+@media screen and (min-width: 1840px) {
+  .plans-category-list {
+    max-width: 1800px;
+  }
 }
 
 .category-item {

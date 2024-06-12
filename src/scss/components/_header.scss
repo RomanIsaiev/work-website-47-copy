@@ -6,9 +6,6 @@
   @include mx.adaptive("padding-top", 20, 10, 0);
   @include mx.adaptive("padding-bottom", 32, 12, 0);
 
-  background-image: url(/src/img/header/header-mobile-background-1x.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
 
   .decor-money {
@@ -16,11 +13,19 @@
   }
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media screen and (max-width: 675px) {
   .header {
-    background-image: url(/src/img/header/header-mobile-background-2x.jpg);
+    background-image: url(/src/img/header/header-mobile-background-1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .header {
+      background-image: url(/src/img/header/header-mobile-background-2x.jpg);
+    }
   }
 }
 
