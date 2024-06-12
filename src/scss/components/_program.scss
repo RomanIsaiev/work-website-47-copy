@@ -5,9 +5,11 @@
   @include mx.adaptive("padding-top", 150, 75, 0);
   @include mx.adaptive("padding-bottom", 150, 75, 0);
 
-  background-image: url(/src/img/program/program-background-1x.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  @media screen and (min-width: 1280px) {
+    background-image: url(/src/img/program/program-background-1x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .program-title-container {
@@ -18,20 +20,20 @@
   color: #fff;
   text-align: center;
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 158, 82, 0);
+  @include mx.adaptive("font-size", 158, 60, 0);
   font-style: normal;
   font-weight: 300;
   line-height: 80%; /* 189.6px */
-  @include mx.adaptive("letter-spacing", -9.5, -5, 0);
+  @include mx.adaptive("letter-spacing", -9.5, -4.6, 0);
   text-transform: uppercase;
 
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .program-subtitle {
   text-align: center;
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 100, 52, 0);
+  @include mx.adaptive("font-size", 100, 42, 0);
   font-style: normal;
   font-weight: 600;
   line-height: 90%; /* 90px */
@@ -51,7 +53,7 @@
 }
 
 .question {
-  @include mx.adaptive("max-width", 788, 411, 0);
+  @include mx.adaptive("max-width", 788, 345, 0);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -72,7 +74,7 @@
 .program-box {
   display: flex;
   justify-content: space-between;
-  @include mx.adaptive("margin-bottom", 45, 35, 0);
+  @include mx.adaptive("margin-bottom", 45, 15, 0);
 }
 
 .info-container {
@@ -88,7 +90,7 @@
 
   color: #fff;
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 21, 11, 0);
+  @include mx.adaptive("font-size", 21, 14, 0);
   font-style: normal;
   font-weight: 450;
   line-height: 100%; /* 14px */
@@ -111,7 +113,7 @@
 
   color: #fff;
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 21, 11, 0);
+  @include mx.adaptive("font-size", 21, 14, 0);
   font-style: normal;
   font-weight: 450;
   line-height: 100%; /* 14px */
@@ -143,19 +145,19 @@
 }
 
 .question.open .symbol-image {
-  transform: rotate(135deg);
+  transform: rotate(45deg);
 }
 
 .question-name {
   color: #fff;
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 26, 14, 0);
+  @include mx.adaptive("font-size", 26, 16, 0);
   font-style: normal;
   font-weight: 500;
   line-height: 100%; /* 26.502px */
   letter-spacing: -0.53px;
 
-  @include mx.adaptive("max-width", 775, 365, 0);
+  @include mx.adaptive("max-width", 775, 285, 0);
 }
 
 .question-name span {
@@ -178,7 +180,7 @@
 .content-list .list-item {
   color: #fff;
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 26, 14, 0);
+  @include mx.adaptive("font-size", 26, 15, 0);
   font-style: normal;
   font-weight: 400;
   line-height: 100%;

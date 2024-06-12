@@ -10,7 +10,7 @@
   background-position: center;
 
   .container {
-    padding: 0 calc(50px + (30 - 50) * ((100vw - 1000px) / (1920 - 1000)));
+    padding: 0 calc(15px + (30 - 15) * ((100vw - 375px) / (1920 - 375)));
   }
 }
 
@@ -22,24 +22,24 @@
   color: #fff;
   text-align: center;
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 100, 52, 0);
+  @include mx.adaptive("font-size", 100, 29, 0);
   font-style: normal;
   font-weight: 300;
   line-height: 90%; /* 120px */
-  @include mx.adaptive(" letter-spacing", -7, -3.6, 0);
+  @include mx.adaptive(" letter-spacing", -7, -2, 0);
   text-transform: uppercase;
 
-  @include mx.adaptive("margin-bottom", 20, 10, 0);
+  @include mx.adaptive("margin-bottom", 20, 5, 0);
 }
 
 .steps-subtitle {
   text-align: center;
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 80, 41, 0);
+  @include mx.adaptive("font-size", 80, 23, 0);
   font-style: normal;
   font-weight: 600;
   line-height: 90%; /* 72px */
-  letter-spacing: -3.2px;
+  @include mx.adaptive(" letter-spacing", -3.2, -0.9, 0);
   text-transform: uppercase;
 
   background: linear-gradient(
@@ -73,8 +73,8 @@
   align-items: center;
   justify-content: center;
 
-  @include mx.adaptive("width", 540, 282, 0);
-  @include mx.adaptive("height", 230, 120, 0);
+  @include mx.adaptive("width", 540, 345, 0);
+  @include mx.adaptive("height", 230, 130, 0);
   border-radius: 15px;
   border: 1px solid #ffd05a;
   background: rgba(255, 255, 255, 0.07);
@@ -97,14 +97,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @include mx.adaptive("gap", 15, 8, 0);
+  @include mx.adaptive("gap", 15, 10, 0);
 }
 
 .steps-number {
   color: rgba(255, 255, 255, 0.15);
   text-align: center;
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 92, 47, 0);
+  @include mx.adaptive("font-size", 92, 60, 0);
   font-style: normal;
   font-weight: 400;
   line-height: 100%; /* 92.147px */
@@ -114,17 +114,17 @@
 .steps-text {
   color: #fff;
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 24, 12, 0);
+  @include mx.adaptive("font-size", 24, 16, 0);
   font-style: normal;
   font-weight: 400;
   line-height: 100%; /* 24px */
   letter-spacing: -0.48px;
 
-  @include mx.adaptive("width", 370, 193, 0);
+  @include mx.adaptive("width", 370, 240, 0);
 }
 
 .steps-ready-container {
-  @include mx.adaptive("width", 879, 458, 0);
+  @include mx.adaptive("width", 879, 345, 0);
   margin: 0 auto;
 }
 
@@ -132,7 +132,7 @@
   color: rgba(255, 255, 255, 0.4);
   text-align: center;
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 48, 25, 0);
+  @include mx.adaptive("font-size", 48, 20, 0);
   font-style: normal;
   font-weight: 300;
   line-height: 90%; /* 43.2px */
@@ -148,7 +148,7 @@
   color: #101010;
   text-align: center;
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 24, 12, 0);
+  @include mx.adaptive("font-size", 24, 16, 0);
   font-style: normal;
   font-weight: 500;
   line-height: 100%; /* 23.627px */

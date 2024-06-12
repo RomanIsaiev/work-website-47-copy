@@ -10,7 +10,7 @@ $maxWidthContainer: 1920;
       #{$property}: calc
         (
           #{$minSize + px} + #{$addSize} *
-            ((100vw - 1000px) / #{$maxWidthContainer - 1000})
+            ((100vw - 375px) / #{$maxWidthContainer - 375})
         );
     }
   } @else if $type==2 {
@@ -19,7 +19,7 @@ $maxWidthContainer: 1920;
     @media (min-width: #{$maxWidthContainer + px}) {
       #{$property}: calc(
         #{$minSize + px} + #{$addSize} *
-          ((100vw - 1000px) / #{$maxWidthContainer - 1000})
+          ((100vw - 375px) / #{$maxWidthContainer - 375})
       );
     }
   } @else {
@@ -28,7 +28,7 @@ $maxWidthContainer: 1920;
       #{$minSize +
         px} +
         #{$addSize} *
-        ((100vw - 1000px) / #{$maxWidthContainer - 1000})
+        ((100vw - 375px) / #{$maxWidthContainer - 375})
     );
   }
 }

@@ -28,12 +28,12 @@ p {
   padding: 0;
 }
 
-.image {
+img {
   display: block;
 }
 
 .container {
-  padding: 0 calc(50px + (98 - 50) * ((100vw - 1000px) / (1920 - 1000)));
+  padding: 0 calc(15px + (98 - 15) * ((100vw - 375px) / (1920 - 375)));
   margin: 0 auto;
 }
 

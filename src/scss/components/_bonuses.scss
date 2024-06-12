@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  @include mx.adaptive("gap", 20, 10, 0);
 
   @include mx.adaptive("margin-bottom", 50, 25, 0);
 }
@@ -17,12 +17,17 @@
 .bonuses-title {
   color: #101010;
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 130, 67, 0);
+  @include mx.adaptive("font-size", 130, 60, 0);
   font-style: normal;
   font-weight: 300;
   line-height: 120%; /* 156px */
   @include mx.adaptive(" letter-spacing", -9.1, -4.7, 0);
   text-transform: uppercase;
+}
+
+.bonuses-title-image {
+  @include mx.adaptive("width", 100, 50, 0);
+  @include mx.adaptive("height", 100, 50, 0);
 }
 
 .bonuses-list {
@@ -33,15 +38,15 @@
 
   @include mx.adaptive("gap", 20, 10, 0);
 
-  @include mx.adaptive("width", 1700, 800, 0);
+  @include mx.adaptive("width", 1700, 345, 0);
   margin: 0 auto;
 }
 
 .bonus-image {
   max-width: 572px;
   max-height: 572px;
-  @include mx.adaptive("width", 552, 198, 0);
-  @include mx.adaptive("height", 552, 198, 0);
+  @include mx.adaptive("width", 552, 297, 0);
+  @include mx.adaptive("height", 552, 297, 0);
 }
 
 // .bonuses-list {

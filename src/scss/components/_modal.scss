@@ -40,7 +40,7 @@ body.modal-open {
   padding-left: 24px;
 
   width: 95%;
-  @include mx.adaptive("width", 1000, 645, 0);
+  @include mx.adaptive("width", 1000, 345, 0);
   min-height: 650px !important;
 
   border-radius: 20px;

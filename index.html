@@ -28,18 +28,20 @@
           height="99"
       /></picture>
       <div class="container">
-        <span class="header-start">СТАРТ 24 июня</span>
-        <div class="format-wrapper">
-          <p class="format-text">
-            <span>Премиальная Мастер-группа</span><br />
-            в формате наставничества “Наставник на Миллион”
-          </p>
-        </div>
-        <div class="header-title-container">
-          <h1 class="header-title">
-            Как стать востребованным, высокооплачиваемым астрологом
-          </h1>
-          <p class="header-subtitle">и зарабатывать от $3000</p>
+        <div class="header-first-container">
+          <span class="header-start">СТАРТ 24 июня</span>
+          <div class="format-wrapper">
+            <p class="format-text">
+              <span>Премиальная Мастер-группа</span><br />
+              в формате наставничества “Наставник на Миллион”
+            </p>
+          </div>
+          <div class="header-title-container">
+            <h1 class="header-title">
+              Как стать востребованным, высокооплачиваемым астрологом
+            </h1>
+            <p class="header-subtitle">и зарабатывать от $3000</p>
+          </div>
         </div>
         <div class="advantages-container">
           <ul class="advantages-list list">
@@ -108,6 +110,20 @@
       <section class="personal">
         <div class="container">
           <div class="personal-wrapper">
+            <div class="personal-text-container">
+              <h2 class="personal-title">Персональная траектория</h2>
+              <p class="personal-desc">
+                обучения, исходя из вашей индивидуальной астрологической карты и
+                ваших талантов, возможностей для реализации
+              </p>
+              <button
+                type="button"
+                class="personal-btn desktop"
+                data-modal-open
+              >
+                хочу
+              </button>
+            </div>
             <div class="personal-image-container">
               <picture
                 ><source
@@ -126,16 +142,9 @@
                   height="507"
               /></picture>
             </div>
-            <div class="personal-text-container">
-              <h2 class="personal-title">Персональная траектория</h2>
-              <p class="personal-desc">
-                обучения, исходя из вашей индивидуальной астрологической карты и
-                ваших талантов, возможностей для реализации
-              </p>
-              <button type="button" class="personal-btn" data-modal-open>
-                хочу
-              </button>
-            </div>
+            <button type="button" class="personal-btn mobile" data-modal-open>
+              хочу
+            </button>
           </div>
         </div>
       </section>
@@ -430,7 +439,6 @@
           <button type="button" class="format-btn" data-modal-open>
             мне подходит
           </button>
-
           <p class="format-desc">
             <span>Я знаю, что жизнь может быть</span><br />
             действительно счастливой и наполненной, только если все сферы
@@ -453,7 +461,7 @@
                   width="617"
                   height="827" />
                 <img
-                  class="author-image"
+                  class="author-image desktop"
                   src="./src/img/author/author-image-1x.png"
                   alt="author"
                   width="617"
@@ -464,6 +472,24 @@
               <div class="author-title-container">
                 <h2 class="author-title">Несколько слов</h2>
                 <p class="author-subtitle">об авторе</p>
+              </div>
+              <div class="author-image-container">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/author/author-image-1x.png 1x,
+                      ./src/img/author/author-image-2x.png 2x
+                    "
+                    media="(min-width: 320px)"
+                    width="617"
+                    height="827" />
+                  <img
+                    class="author-image mobile"
+                    src="./src/img/author/author-image-1x.png"
+                    alt="author"
+                    width="617"
+                    height="827"
+                /></picture>
               </div>
               <h3 class="auhtor-name">виктория бардадым</h3>
               <ul class="auhtor-list">

@@ -5,32 +5,56 @@
 }
 
 .author-container {
-  @include mx.adaptive("width", 1396, 727, 0);
   margin: 0 auto;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  flex-wrap: wrap;
 
   @include mx.adaptive("margin-bottom", 70, 35, 0);
 }
 
 .author-image {
   @include mx.adaptive("width", 617, 321, 0);
-  @include mx.adaptive("height", 836, 435, 0);
+  @include mx.adaptive("height", 827, 435, 0);
+}
+
+.author-image.desktop {
+  display: none;
 }
 
 .author-title-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
 
-  @include mx.adaptive("margin-bottom", 100, 50, 0);
+  margin-bottom: 18px;
+}
+
+@media screen and (min-width: 1000px) {
+  .author-container {
+    flex-wrap: nowrap;
+  }
+
+  .author-image.mobile {
+    display: none;
+  }
+
+  .author-image.desktop {
+    display: block;
+  }
+
+  .author-title-container {
+    align-items: flex-start;
+    margin-bottom: 18px;
+  }
 }
 
 .author-title {
   color: #101010;
+  text-align: center;
   font-family: "Futura PT";
   @include mx.adaptive("font-size", 80, 40, 0);
   font-style: normal;
@@ -44,6 +68,7 @@
 
 .author-subtitle {
   font-family: "Futura PT";
+  text-align: center;
   @include mx.adaptive("font-size", 128, 67, 0);
   font-style: normal;
   font-weight: 600;
@@ -79,16 +104,36 @@
   @include mx.adaptive("height", 87, 46, 0);
 
   @include mx.adaptive("margin-bottom", 30, 15, 0);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .auhtor-list {
-  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include mx.adaptive("padding-left", 120, 25, 0);
+
+  @include mx.adaptive("width", 730, 285, 0);
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1000px) {
+  .auhtor-name {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .auhtor-list {
+    padding-left: 25px;
+  }
 }
 
 .author-item {
   color: #101010;
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 32, 16, 0);
+  @include mx.adaptive("font-size", 32, 15, 0);
   font-style: normal;
   font-weight: 300;
   line-height: 120%; /* 38.4px */
@@ -96,7 +141,7 @@
 
 .author-desc-container {
   @include mx.adaptive("padding", 40, 20, 0);
-  @include mx.adaptive("width", 844, 461, 0);
+  @include mx.adaptive("width", 844, 345, 0);
 
   margin: 0 auto;
 
@@ -110,7 +155,7 @@
   color: #4b82ef;
   text-align: center;
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 36, 20, 0);
+  @include mx.adaptive("font-size", 36, 15, 0);
   font-style: normal;
   font-weight: 600;
   line-height: 100%; /* 38px */
@@ -124,7 +169,7 @@
   color: #101010;
   text-align: center;
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 36, 18, 0);
+  @include mx.adaptive("font-size", 36, 15, 0);
   font-style: normal;
   font-weight: 400;
   line-height: 100%; /* 36px */
@@ -135,12 +180,12 @@
   color: #c1c1c1;
   text-align: center;
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 48, 25, 0);
+  @include mx.adaptive("font-size", 48, 18, 0);
   font-style: normal;
   font-weight: 300;
   line-height: 90%; /* 43.2px */
-  letter-spacing: -0.96px;
+  @include mx.adaptive("letter-spacing", -1, -0.36, 0);
 
-  @include mx.adaptive("width", 750, 390, 0);
+  @include mx.adaptive("width", 750, 279, 0);
   margin: 0 auto;
 }

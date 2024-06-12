@@ -2,7 +2,7 @@
 
 .before {
   @include mx.adaptive("padding-top", 150, 78, 0);
-  @include mx.adaptive("padding-bottom", 100, 50, 0);
+  @include mx.adaptive("padding-bottom", 100, 60, 0);
   background: #101010;
 
   background-image: url(/src/img/before/before-background-1x.jpg);
@@ -14,11 +14,11 @@
 .before-title {
   text-align: center;
   font-family: "Bebas Neue Cyrillic";
-  @include mx.adaptive("font-size", 130, 68, 0);
+  @include mx.adaptive("font-size", 130, 48, 0);
   font-style: normal;
   font-weight: 400;
   line-height: 80%; /* 156px */
-  @include mx.adaptive(" letter-spacing", -5.2, -2.7, 0);
+  @include mx.adaptive(" letter-spacing", -5.2, -2, 0);
   text-transform: uppercase;
 
   background: linear-gradient(90deg, #4a81ef 0%, #7db1ff 50%, #4a81ef 100%);
@@ -31,9 +31,9 @@
 
 .before-list {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  @include mx.adaptive("gap", 20, 10, 0);
 }
 
 .before-item {
