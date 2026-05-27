@@ -51,6 +51,7 @@
   justify-content: center;
   // @include mx.adaptive("gap", 25, 50, 0);
   gap: 50px;
+  align-items: flex-start;
 
   margin: 0 auto;
 }
@@ -90,9 +91,29 @@
 
 @media screen and (min-width: 1000px) {
   .category-item {
-    @include mx.adaptive('height', 1350, 1050, 0);
+    // @include mx.adaptive('height', 1350, 1050, 0);
+
     @include mx.adaptive('width', 416, 216, 0);
   }
+}
+
+.plans-btn-wrap {
+  display: block;
+  padding: 20px;
+}
+
+.plan-btn-desc {
+  margin-top: 10px;
+  display: block;
+  color: #000;
+  text-align: center;
+  font-family: 'Futura PT';
+  @include mx.adaptive('font-size', 16, 13, 0);
+  font-style: normal;
+  font-weight: 450;
+  line-height: 120%; /* 19.2px */
+
+  opacity: 0.4;
 }
 
 .category-title-container {
@@ -182,6 +203,8 @@
 
   padding-left: 25px;
   list-style: disc;
+
+  margin-bottom: 40px;
 }
 
 .centerd-container {
@@ -215,7 +238,6 @@
 }
 
 .plans-desc-container {
-  position: absolute;
   display: flex;
   flex-direction: column;
   gap: 60px;
