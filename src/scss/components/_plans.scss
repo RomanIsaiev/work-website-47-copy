@@ -1,8 +1,8 @@
-@use "../utils/mixins" as mx;
+@use '../utils/mixins' as mx;
 
 .plans {
-  @include mx.adaptive("padding-top", 150, 75, 0);
-  @include mx.adaptive("padding-bottom", 100, 50, 0);
+  @include mx.adaptive('padding-top', 150, 75, 0);
+  @include mx.adaptive('padding-bottom', 100, 50, 0);
 
   .container {
     padding: 0 calc(15px + (50 - 15) * ((100vw - 375px) / (1920 - 375)));
@@ -10,17 +10,17 @@
 }
 
 .plans-title-container {
-  @include mx.adaptive("margin-bottom", 100, 50, 0);
+  @include mx.adaptive('margin-bottom', 100, 50, 0);
 }
 
 .plans-title {
   text-align: center;
-  font-family: "Futura PT";
-  @include mx.adaptive("font-size", 100, 38, 0);
+  font-family: 'Futura PT';
+  @include mx.adaptive('font-size', 100, 38, 0);
   font-style: normal;
   font-weight: 600;
   line-height: 90%; /* 90px */
-  @include mx.adaptive(" letter-spacing", -5, -1.9, 0);
+  @include mx.adaptive(' letter-spacing', -5, -1.9, 0);
   text-transform: uppercase;
 
   background: linear-gradient(90deg, #4a81ef 0%, #7db1ff 50%, #4a81ef 100%);
@@ -34,12 +34,12 @@
 .plans-subtitle {
   color: #101010;
   text-align: center;
-  font-family: "Futura PT";
-  @include mx.adaptive("font-size", 130, 50, 0);
+  font-family: 'Futura PT';
+  @include mx.adaptive('font-size', 130, 50, 0);
   font-style: normal;
   font-weight: 300;
   line-height: 80%; /* 156px */
-  @include mx.adaptive(" letter-spacing", -9.1, -3.5, 0);
+  @include mx.adaptive(' letter-spacing', -9.1, -3.5, 0);
   text-transform: uppercase;
 }
 
@@ -83,15 +83,15 @@
   background: #fff;
 
   // @include mx.adaptive("height", 1200, 1050, 0);
-
-  @include mx.adaptive("width", 416, 345, 0);
-  @include mx.adaptive("padding-bottom", 38, 19, 0);
+  // height: 100%;
+  @include mx.adaptive('width', 416, 345, 0);
+  @include mx.adaptive('padding-bottom', 38, 19, 0);
 }
 
 @media screen and (min-width: 1000px) {
   .category-item {
-    @include mx.adaptive("height", 1200, 1050, 0);
-    @include mx.adaptive("width", 416, 216, 0);
+    @include mx.adaptive('height', 1350, 1050, 0);
+    @include mx.adaptive('width', 416, 216, 0);
   }
 }
 
@@ -105,8 +105,8 @@
   border-radius: 13px 13px 0px 0px;
   background: #dff1ff;
 
-  @include mx.adaptive("height", 135, 111, 0);
-  @include mx.adaptive("margin-bottom", 30, 15, 0);
+  @include mx.adaptive('height', 135, 111, 0);
+  @include mx.adaptive('margin-bottom', 30, 15, 0);
 }
 
 .plans-image {
@@ -114,8 +114,8 @@
   left: 50%;
   top: -40%;
 
-  @include mx.adaptive("width", 81, 67, 0);
-  @include mx.adaptive("height", 81, 67, 0);
+  @include mx.adaptive('width', 81, 67, 0);
+  @include mx.adaptive('height', 81, 67, 0);
 
   transform: translate(-50%);
 }
@@ -123,22 +123,22 @@
 .plan-name {
   color: #090909;
   text-align: center;
-  font-family: "Futura PT";
-  @include mx.adaptive("font-size", 24, 20, 0);
+  font-family: 'Futura PT';
+  @include mx.adaptive('font-size', 24, 20, 0);
   font-style: normal;
   font-weight: 600;
   line-height: 100%; /* 28.8px */
   text-transform: uppercase;
 
-  @include mx.adaptive("margin-bottom", 10, 5, 0);
+  @include mx.adaptive('margin-bottom', 10, 5, 0);
 }
 
 .plan-mentor {
   display: block;
   color: #fff;
   text-align: center;
-  font-family: "Futura PT";
-  @include mx.adaptive("font-size", 16, 13, 0);
+  font-family: 'Futura PT';
+  @include mx.adaptive('font-size', 16, 13, 0);
   font-style: normal;
   font-weight: 450;
   line-height: 120%; /* 19.2px */
@@ -148,24 +148,24 @@
   border-radius: 4px;
   background: #6e9af3;
 
-  @include mx.adaptive("width", 152, 130, 0);
+  @include mx.adaptive('width', 152, 130, 0);
   margin: 0 auto;
 }
 
 .earn-container {
   border-radius: 10px;
   border: 1px solid #6e9af3;
-  @include mx.adaptive("padding", 15, 10, 0);
-  @include mx.adaptive("margin-bottom", 40, 20, 0);
-  @include mx.adaptive("width", 365, 195, 0);
+  @include mx.adaptive('padding', 15, 10, 0);
+  @include mx.adaptive('margin-bottom', 40, 20, 0);
+  @include mx.adaptive('width', 365, 195, 0);
   margin-left: auto;
   margin-right: auto;
 
   .earn-text {
     color: #6e9af3;
     text-align: center;
-    font-family: "Futura PT";
-    @include mx.adaptive("font-size", 20, 16, 0);
+    font-family: 'Futura PT';
+    @include mx.adaptive('font-size', 20, 16, 0);
     font-style: normal;
     font-weight: 500;
     line-height: 100%; /* 19.809px */
@@ -178,14 +178,14 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  @include mx.adaptive("gap", 10, 7, 0);
+  @include mx.adaptive('gap', 10, 7, 0);
 
   padding-left: 25px;
   list-style: disc;
 }
 
 .centerd-container {
-  @include mx.adaptive("padding", 20, 10, 0);
+  @include mx.adaptive('padding', 20, 10, 0);
 }
 
 @media screen and (min-width: 1000px) {
@@ -200,8 +200,8 @@
 
 .modules-item {
   color: #ababab;
-  font-family: "Futura PT";
-  @include mx.adaptive("font-size", 20, 16, 0);
+  font-family: 'Futura PT';
+  @include mx.adaptive('font-size', 20, 16, 0);
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
@@ -216,9 +216,11 @@
 
 .plans-desc-container {
   position: absolute;
-
-  @include mx.adaptive("left", 19, 10, 0);
-  @include mx.adaptive("bottom", 38, 17, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  @include mx.adaptive('left', 19, 10, 0);
+  @include mx.adaptive('bottom', 38, 17, 0);
 }
 
 .plans-desc-list {
@@ -227,7 +229,7 @@
 
   display: flex;
   flex-direction: column;
-  @include mx.adaptive("gap", 10, 7, 0);
+  @include mx.adaptive('gap', 10, 7, 0);
 
   padding-left: 25px;
   list-style: disc;
@@ -235,14 +237,14 @@
 
 @media screen and (min-width: 1000px) {
   .plans-desc-list {
-    @include mx.adaptive("width", 355, 165, 0);
+    @include mx.adaptive('width', 355, 165, 0);
   }
 }
 
 .plans-desc-item {
   color: #ababab;
-  font-family: "Futura PT";
-  @include mx.adaptive("font-size", 20, 16, 0);
+  font-family: 'Futura PT';
+  @include mx.adaptive('font-size', 20, 16, 0);
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
@@ -257,31 +259,31 @@
 }
 
 .price-wrapper {
-  @include mx.adaptive("padding", 20, 10, 0);
+  @include mx.adaptive('padding', 20, 10, 0);
   border-radius: 10px;
   border: 1px solid #6e9af3;
-  @include mx.adaptive("width", 375, 196, 0);
+  @include mx.adaptive('width', 375, 196, 0);
   margin: 0 auto;
 }
 
 .price-title {
   color: #101010;
   text-align: center;
-  font-family: "Futura PT";
-  @include mx.adaptive("font-size", 24, 12, 0);
+  font-family: 'Futura PT';
+  @include mx.adaptive('font-size', 24, 12, 0);
   font-style: normal;
   font-weight: 500;
   line-height: 100%; /* 24px */
   letter-spacing: -0.48px;
 
-  @include mx.adaptive("margin-bottom", 10, 5, 0);
+  @include mx.adaptive('margin-bottom', 10, 5, 0);
 }
 
 .price {
   color: #6e9af3;
   text-align: center;
-  font-family: "Futura PT";
-  @include mx.adaptive("font-size", 48, 25, 0);
+  font-family: 'Futura PT';
+  @include mx.adaptive('font-size', 48, 25, 0);
   font-style: normal;
   font-weight: 500;
   line-height: 100%; /* 48px */
@@ -299,7 +301,7 @@
   border: 3px solid #dff1ff;
 
   @media screen and (max-width: 1000px) {
-    @include mx.adaptive("height", 1100, 800, 0);
+    @include mx.adaptive('height', 1100, 800, 0);
   }
 
   .plans-modules-list .modules-item:nth-child(-n + 7) {
@@ -323,7 +325,7 @@
 .plans-category-list .category-item:nth-child(2) {
   border: 3px solid #ffe8aa;
   @media screen and (max-width: 1000px) {
-    @include mx.adaptive("height", 1100, 800, 0);
+    @include mx.adaptive('height', 1100, 800, 0);
   }
 
   .plans-modules-list .modules-item:nth-child(-n + 7) {
@@ -360,7 +362,7 @@
 .plans-category-list .category-item:nth-child(3) {
   border: 3px solid #6e9af3;
   @media screen and (max-width: 1000px) {
-    @include mx.adaptive("height", 1100, 880, 0);
+    @include mx.adaptive('height', 1100, 880, 0);
   }
 
   .plans-modules-list .modules-item:nth-child(-n + 8) {
@@ -397,7 +399,7 @@
 .plans-category-list .category-item:nth-child(4) {
   border: 3px solid #ffd05a;
   @media screen and (max-width: 1000px) {
-    @include mx.adaptive("height", 1100, 880, 0);
+    @include mx.adaptive('height', 1100, 880, 0);
   }
 
   .plans-modules-list .modules-item:nth-child(-n + 8) {
